@@ -113,10 +113,11 @@ body {
   background-position: center;
   transition: transform 0.3s ease-in;
 }
-
-.btn:hover {
-  color: var(--softRed);
-  cursor: pointer;
+@media (hover: hover) {
+  .btn:hover {
+    color: var(--softRed);
+    cursor: pointer;
+  }
 }
 
 .attribution {
