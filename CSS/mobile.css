@@ -96,7 +96,7 @@ body {
 }
 
 .btn {
-  width: 100%;
+  width: 29.5rem;
   font-size: 1.5rem;
   background-color: transparent;
   border: transparent;
@@ -125,6 +125,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
 }
+
 .attribution a {
   color: var(--softRed);
 }
