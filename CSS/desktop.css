@@ -1,6 +1,6 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .card {
-    width: 90rem;
+    max-width: 90rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -50rem -25rem;
-    margin-inline: auto;
+    margin-inline: 5rem;
   }
   .section--FAQ {
     margin: 5rem 0;
