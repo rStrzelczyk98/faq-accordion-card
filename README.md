@@ -14,7 +14,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [FAQ card](https://rstrzelczyk98.github.io/fax-accordion-card/)
+- Live Site URL: [FAQ card](https://rstrzelczyk98.github.io/faq-accordion-card/)
 
 ## Built with
 
