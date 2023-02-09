@@ -1,0 +1,130 @@
+* {
+  font-family: 'Kumbh Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --softRed: hsl(14, 88%, 65%);
+  --softViolet: hsl(273, 75%, 66%);
+  --softBlue: hsl(240, 73%, 65%);
+  --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --darkGrayishBlue: hsl(240, 6%, 50%);
+  --lightGrayishBlue: hsl(240, 5%, 91%);
+  --white: hsl(0, 100%, 100%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(var(--softViolet), var(--softBlue));
+  min-height: 100svh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--white);
+  background-image: url(../images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 35.5rem;
+  padding-inline: 3rem;
+  padding-top: 12rem;
+  padding-bottom: 3rem;
+  border-radius: 2rem;
+  margin: 20rem 0;
+  box-shadow: 0 2rem 3rem #00000040;
+}
+
+.mobile {
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  margin-inline: auto;
+  transform: translate(2.5rem, -23rem);
+}
+
+.desktop {
+  display: none;
+}
+
+.section--FAQ h1 {
+  color: var(--veryDarkDesaturatedBlue);
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.question {
+  border-bottom: 0.1rem solid var(--lightGrayishBlue);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.question h2 {
+  color: var(--veryDarkGrayishBlue);
+  font-weight: 400;
+  font-size: 1.5;
+}
+
+.question p {
+  color: var(--darkGrayishBlue);
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin: 2rem 4rem 0 0;
+  display: none;
+}
+
+.question > .active {
+  display: block;
+}
+.question > .btn--active {
+  color: var(--veryDarkDesaturatedBlue);
+  font-weight: 700;
+}
+.question > .btn--active:hover {
+  color: var(--softRed);
+  font-weight: 700;
+}
+.question > .btn--active span {
+  transform: rotate(180deg);
+}
+
+.btn {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn span {
+  width: 1rem;
+  height: 0.7rem;
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.3s ease-in;
+}
+.btn:hover {
+  color: var(--softRed);
+  cursor: pointer;
+}
+
+.attribution {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--softRed);
+}
